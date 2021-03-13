@@ -2309,12 +2309,25 @@ margin : 10px
   .our-team .container .card { 
     height: 900px;
   }
+  .breadcrumbs{
+    padding: 20px;
+  }
+  .breadcrumbs .container { 
+    margin-top: 30px;
+  }
+
   }
 
  /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
   .our-team .container .card { 
     height: 800px;
+  }
+  .breadcrumbs{
+    padding: 20px;
+  }
+  .breadcrumbs .container { 
+    margin-top: 30px;
   }
  }
 

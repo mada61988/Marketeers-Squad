@@ -558,10 +558,10 @@ section {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 15px 0;
-  background: #1bbd36;
+  padding: 20px 0;
+  background: #b6202e;
   min-height: 40px;
-  margin-top: 72px;
+  margin-top: 90px;
 }
 
 .breadcrumbs h2 {
@@ -1366,11 +1366,11 @@ margin : 10px
 
 .contact .info i {
   font-size: 20px;
-  color: #1bbd36;
+  color: #b6202e;
   float: left;
   width: 44px;
   height: 44px;
-  border: 1px solid #1bbd36;
+  border: 1px solid #b6202e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1394,7 +1394,7 @@ margin : 10px
 }
 
 .contact .info:hover i {
-  background: #1bbd36;
+  background: #b6202e;
   color: #fff;
 }
 
@@ -1433,7 +1433,7 @@ margin : 10px
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #b6202e;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1453,7 +1453,7 @@ margin : 10px
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #b6202e;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -1467,7 +1467,7 @@ margin : 10px
 }
 
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #1bbd36;
+  border-color: #b6202e;
 }
 
 .contact .php-email-form input {
@@ -1479,7 +1479,7 @@ margin : 10px
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #1bbd36;
+  background: #b6202e;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1488,7 +1488,7 @@ margin : 10px
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #2ae149;
+  background: #58010a;
 }
 
 @-webkit-keyframes animate-loading {

@@ -1362,6 +1362,7 @@ margin : 10px
 
 .contact .info {
   background: #fff;
+  
 }
 
 .contact .info i {
@@ -2294,6 +2295,12 @@ margin : 10px
 @media (max-width: 575.98px) { 
   .our-team .container .card { 
     height: 900px;
+  }
+  .breadcrumbs{
+    padding: 40px;
+  }
+  .breadcrumbs .container { 
+    margin-top: 30px;
   }
  }
 

@@ -314,4 +314,50 @@
   // $(document).ready(function () {
   //   moveit();
   // });
+  $(document).ready(function () {
+    // get current URL path and assign 'active' class
+    var pathname = window.location.pathname;
+    $('.navmenu1 > li > a[href="' + pathname + '"]').parent().addClass('active');
+  })
+  $(function () {
+    // Auto play modal video
+    $(".video").click(function () {
+      var theModal = $(this).data("target"),
+        videoSRC = $(this).attr("data-video"),
+        videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+      $(theModal + ' iframe').attr('src', videoSRCauto);
+      $(theModal + ' button.close').click(function () {
+        $(theModal + ' iframe').attr('src', videoSRC);
+      });
+    });
+  });
+
 })(jQuery);
+
+function onLoad() {
+  if (window.location.pathname == '/blog.html') {
+    document.getElementById('courses').classList.add('active')
+    document.getElementById('home').classList.remove('active')
+    document.getElementById('pricing').classList.remove('active')
+    document.getElementById('contact').classList.remove('active')
+  }
+  if (window.location.pathname == '/index.html') {
+    document.getElementById('home').classList.add('active')
+    document.getElementById('courses').classList.remove('active')
+    document.getElementById('pricing').classList.remove('active')
+    document.getElementById('contact').classList.remove('active')
+  }
+  if (window.location.pathname == '/pricing.html') {
+    document.getElementById('pricing').classList.add('active')
+    document.getElementById('courses').classList.remove('active')
+    document.getElementById('home').classList.remove('active')
+    document.getElementById('contact').classList.remove('active')
+  }
+  if (window.location.pathname == '/contact.html') {
+    document.getElementById('contact').classList.add('active')
+    document.getElementById('courses').classList.remove('active')
+    document.getElementById('home').classList.remove('active')
+    document.getElementById('pricing').classList.remove('active')
+  }
+
+}

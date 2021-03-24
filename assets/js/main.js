@@ -361,3 +361,4 @@ function onLoad() {
   }
 
 }
+console.log(window.location)

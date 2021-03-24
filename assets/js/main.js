@@ -335,25 +335,25 @@
 })(jQuery);
 
 function onLoad() {
-  if (window.location.pathname == '/blog.html') {
+  if (window.location.pathname == '/Marketeers-Squad/blog.html') {
     document.getElementById('courses').classList.add('active')
     document.getElementById('home').classList.remove('active')
     document.getElementById('pricing').classList.remove('active')
     document.getElementById('contact').classList.remove('active')
   }
-  if (window.location.pathname == '/index.html') {
+  if (window.location.pathname == '/Marketeers-Squad/index.html') {
     document.getElementById('home').classList.add('active')
     document.getElementById('courses').classList.remove('active')
     document.getElementById('pricing').classList.remove('active')
     document.getElementById('contact').classList.remove('active')
   }
-  if (window.location.pathname == '/pricing.html') {
+  if (window.location.pathname == '/Marketeers-Squad/pricing.html') {
     document.getElementById('pricing').classList.add('active')
     document.getElementById('courses').classList.remove('active')
     document.getElementById('home').classList.remove('active')
     document.getElementById('contact').classList.remove('active')
   }
-  if (window.location.pathname == '/contact.html') {
+  if (window.location.pathname == '/Marketeers-Squad/contact.html') {
     document.getElementById('contact').classList.add('active')
     document.getElementById('courses').classList.remove('active')
     document.getElementById('home').classList.remove('active')

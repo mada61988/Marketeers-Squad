@@ -963,6 +963,7 @@ section {
 .team .member .member-img {
   position: relative;
   overflow: hidden;
+  
 }
 
 .team .member .social {
@@ -986,7 +987,7 @@ section {
 }
 
 .team .member .social a:hover {
-  color: #1bbd36;
+  color: #b6202e;
 }
 
 .team .member .social i {

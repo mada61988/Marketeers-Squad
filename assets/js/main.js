@@ -332,6 +332,8 @@
     });
   });
 
+
+
 })(jQuery);
 
 function onLoad() {
@@ -361,4 +363,10 @@ function onLoad() {
   }
 
 }
-console.log(window.location)
+function pauseCarousel() {
+  $('#carouselExampleControls').carousel('pause');
+}
+function cycleCarousel() {
+  $('#carouselExampleControls').carousel('cycle');
+
+}

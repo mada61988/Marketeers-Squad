@@ -771,6 +771,14 @@ section {
   fill: #11dbcf;
 }
 
+/* .content-creation-continue{
+  display: none;
+}
+
+.content-creation:hover + .content-creation-continue { 
+display: block;
+} */
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -914,12 +922,14 @@ section {
 --------------------------------------------------------------*/
 .about-us .content h2 {
   font-weight: 700;
-  font-size: 42px;
-  line-height: 60px;
+  font-size: 30px;
+  
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-
+.about-us .content h2 span { 
+  font-size: 34px;
+}
 .about-us .content h3 {
   font-weight: 500;
   line-height: 32px;
@@ -941,13 +951,35 @@ section {
   top: 7px;
   position: absolute;
   font-size: 20px;
-  color: #1bbd36;
+  color: #b6202e;
 }
 
 .about-us .content p:last-child {
   margin-bottom: 0;
 }
-
+.who-we-are .row h4 { 
+  line-height: 1.6;
+  text-align: center;
+}
+.who-we-are .row h4 span { 
+  color: #b6202e;
+}
+.why-we-rock .row h2 {
+  line-height: 1.6;
+  text-align:center;
+  font-size: 28px;
+}
+.why-we-rock .row h2 span { 
+  color: #b6202e;
+}
+.our-mission .row h4 { 
+   line-height: 1.6;
+   text-align: center;
+}
+.our-vision .row h4 { 
+    line-height: 1.7;
+    text-align: center;
+}
 /*--------------------------------------------------------------
 # Our Team
 --------------------------------------------------------------*/
@@ -2591,6 +2623,27 @@ hr.solid {
   #video-modal h2 {
     font-size: 1.3rem !important;
   }
+  .who-we-are .row h4{ 
+font-size: 1.3rem;
+line-height: 1.7;
+  }
+  .why-we-rock .row h2 {
+    font-size: 1.4rem;
+  }
+  .why-we-rock .row h2 span { 
+    font-size: 1.9rem;
+  }
+  .why-we-rock .row h4 { 
+    font-size: 1.3rem;
+  }
+  .our-mission .row h4 { 
+    font-size: 1.3rem;
+    line-height: 1.7;
+  }
+   .our-vision .row h4 {
+     font-size: 1.4rem;
+     line-height: 1.7;
+   }
 }
 
 /* Small devices (landscape phones, less than 768px) */

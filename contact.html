@@ -81,11 +81,11 @@
 
     </div>
   </header><!-- End Header -->
-
+  <div style="margin-top: 70px;"></div>
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
+    <!-- <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
@@ -97,7 +97,7 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
 
     <!-- ======= Contact Section ======= -->
     <div class="map-section">
@@ -131,7 +131,7 @@
                 <div class="col-lg-4 info mt-4 mt-lg-0">
                   <i class="icofont-phone"></i>
                   <h4>Call:</h4>
-                  <p>+02 1129 8058 28<br>+02 1129 8058 28</p>
+                  <p>+02 1065422101</p>
                 </div>
               </div>
             </div>
@@ -140,24 +140,43 @@
 
         </div>
 
+
+
+
+
         <div class="row mt-5 justify-content-center" data-aos="fade-up">
+
           <div class="col-lg-10">
+
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
                     data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
+
                 </div>
+
                 <div class="col-md-6 form-group">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
                     data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="company" class="form-control" id="company" placeholder="Company Name" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="text" class="form-control" name="industry" id="industry" placeholder="Industry" />
                   <div class="validate"></div>
                 </div>
               </div>
               <div class="form-group">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  data-rule="minlen:11" data-msg="Please enter your phone number consisting of 11 numbers" />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
@@ -170,7 +189,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" onclick="sendEmail()">Send Message</button></div>
             </form>
           </div>
 
@@ -188,42 +207,48 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-contact">
+          <div class="col-lg-4 col-md-6 footer-contact">
             <h3>MARKETEERS <br /> <span style="color: #b6202e;">SQUAD</span></h3>
-            <p>
+            <p class="text-uppercase">
               Abbas El Akkad <br>
               Cairo, Nasr City<br>
               Egypt <br><br>
-              <strong>Phone:</strong>01129805828<br>
-              <strong>Email:</strong> mada61988@gmail.com<br>
+              <strong>Phone:</strong> +02 1065422101<br>
+              <strong>Email:</strong>mada61988@gmail.com<br>
             </p>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
+          <!-- <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              </ul>
+            </div> -->
 
-          <div class="col-lg-3 col-md-6 footer-links">
+          <div class="col-lg-4 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#content-creation" class="footer-services">Content
+                  Creation
+                </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#web-development">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#full-marketing-strategy">Full Marketing Strategy</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#media-production">Media Production</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#designs">Designs</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#styling-and-photoshoots">Styling And Photoshoots</a>
+              </li>
+
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <h4>Send an EMAIL</h4>
+            <p>Send your Email from here and we will contact you as soon as possible</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
@@ -272,7 +297,30 @@
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/integration
+      emailjs.init("user_wCuxcAezTVAFPntlLydSC");
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // generate a five digit number for the contact_number variable
+        this.contact_number.value = Math.random() * 100000 | 0;
+        // these IDs from the previous steps
+        emailjs.sendForm('contact_service', 'contact_form', this)
+          .then(function () {
+            console.log('SUCCESS!');
+          }, function (error) {
+            console.log('FAILED...', error);
+          });
+      });
+    }
+  </script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 

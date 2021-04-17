@@ -116,7 +116,12 @@
     }, 1500, 'easeInOutExpo');
     return false;
   });
-
+  $('.footer-services').click(function () {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1500, 'easeInOutExpo');
+    return false;
+  });
   // Porfolio isotope and filter
   $(window).on('load', function () {
     var portfolioIsotope = $('.portfolio-container').isotope({
@@ -369,4 +374,20 @@ function pauseCarousel() {
 function cycleCarousel() {
   $('#carouselExampleControls').carousel('cycle');
 
+}
+
+function sendEmail() {
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: "elliottnathann@gmail.com",
+    Password: "4523534mada",
+    To: 'mada61988@gmail.com',
+    From: "elliottnathann@gmail.com",
+    Subject: "Sending Email using javascript",
+    Body: "Well that was easy!!",
+  })
+    .then(function (message) {
+      alert("mail sent successfully")
+      console.log(message, 'this is the message')
+    });
 }

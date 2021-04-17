@@ -1207,7 +1207,7 @@ display: block;
 }
 
 .pricing h4 {
-  font-size: 36px;
+
   color: #b6202e;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
@@ -2631,7 +2631,7 @@ line-height: 1.7;
     font-size: 1.4rem;
   }
   .why-we-rock .row h2 span { 
-    font-size: 1.9rem;
+    font-size: 1.4.5rem;
   }
   .why-we-rock .row h4 { 
     font-size: 1.3rem;

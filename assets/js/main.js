@@ -376,18 +376,53 @@ function cycleCarousel() {
 
 }
 
+function test() {
+  // if (doc('mobile-number').match(regex)) {
+  //   console.log(true)
+  //   console.log(doc('mobile-number').match(regex))
+  // }
+
+  // var reg = new RegExp('/^\d+$/');
+  // console.log(reg.test('asdas'));
+
+
+  const re = /^\d*(\.\d+)?$/;
+  console.log(doc('mobile-number').match(re))       // true
+  '123.3'.match(re)     // true
+  '123!3'.match(re)
+  console.log(doc('mobile-number').length)
+}
+const re = /^\d*(\.\d+)?$/;
+
+function doc(id) {
+  return document.getElementById(id).value;
+};
 function sendEmail() {
-  Email.send({
-    Host: "smtp.gmail.com",
-    Username: "elliottnathann@gmail.com",
-    Password: "4523534mada",
-    To: 'mada61988@gmail.com',
-    From: "elliottnathann@gmail.com",
-    Subject: "Sending Email using javascript",
-    Body: "Well that was easy!!",
-  })
-    .then(function (message) {
-      alert("mail sent successfully")
-      console.log(message, 'this is the message')
-    });
+  if (doc('name') != "" && doc('email').indexOf('@') > -1 && doc('email').indexOf('.com') > -1 && doc('company') != "" && doc('mobile-number').match(re) && doc('mobile-number') != "" && doc('mobile-number').length <= 11 && doc('message') != "") {
+    Email.send({
+      Host: "smtp.gmail.com",
+      Username: "Elliott Nathann",
+      Password: "4523534mada",
+      To: 'mada61988@gmail.com',
+      From: "elliottnathann@gmail.com",
+      Subject: "Marketeers squad client emails",
+      Body: "",
+    })
+      .then(function (message) {
+        document.getElementById('email-sent').style.display = 'block'
+      });
+  }
+  if (doc('name') == "") document.getElementById('name-validation').style.display = 'block'
+  else { document.getElementById('name-validation').style.display = 'none' }
+  if (doc('email').indexOf('@') == -1 || doc('email').indexOf('.com') == -1) document.getElementById('email-validation').style.display = 'block'
+  else { document.getElementById('email-validation').style.display = 'none' }
+  if (doc('company') == "") document.getElementById('company-validation').style.display = 'block'
+  else { document.getElementById('company-validation').style.display = 'none' }
+  if (!doc('mobile-number').match(re) || doc('mobile-number') == "" || doc('mobile-number').length < 11) document.getElementById('mobile-number-validation').style.display = 'block'
+
+  else { document.getElementById('mobile-number-validation').style.display = 'none' }
+  if (doc('message') == "") document.getElementById('message-validation').style.display = 'block'
+  else { document.getElementById('message-validation').style.display = 'none' }
+
+
 }

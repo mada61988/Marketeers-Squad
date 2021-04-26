@@ -342,13 +342,13 @@
 })(jQuery);
 
 function onLoad() {
-  if (window.location.pathname == '/Marketeers-Squad/blog.html || /Marketeers-Squad/') {
+  if (window.location.pathname == '/Marketeers-Squad/blog.html') {
     document.getElementById('courses').classList.add('active')
     document.getElementById('home').classList.remove('active')
     document.getElementById('pricing').classList.remove('active')
     document.getElementById('contact').classList.remove('active')
   }
-  if (window.location.pathname == '/Marketeers-Squad/index.html') {
+  if (window.location.pathname == '/Marketeers-Squad/index.html ||  /Marketeers-Squad/') {
     document.getElementById('home').classList.add('active')
     document.getElementById('courses').classList.remove('active')
     document.getElementById('pricing').classList.remove('active')

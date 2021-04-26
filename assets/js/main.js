@@ -342,7 +342,7 @@
 })(jQuery);
 
 function onLoad() {
-  if (window.location.pathname == '/Marketeers-Squad/blog.html') {
+  if (window.location.pathname == '/Marketeers-Squad/blog.html || /Marketeers-Squad/') {
     document.getElementById('courses').classList.add('active')
     document.getElementById('home').classList.remove('active')
     document.getElementById('pricing').classList.remove('active')
@@ -409,6 +409,7 @@ function sendEmail() {
       Body: "",
     })
       .then(function (message) {
+        console.log(message)
         document.getElementById('email-sent').style.display = 'block'
       });
   }

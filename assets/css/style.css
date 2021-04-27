@@ -2530,7 +2530,7 @@ color: white;
 #course-enrollment {
 
   min-height: 230px;
-  background-color: #3e090a;
+  background: linear-gradient(90deg, #41090a 40%, 50%, #710606, 60%, #710606 60%);
 
 }
 #course-enrollment h1 { 

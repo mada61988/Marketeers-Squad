@@ -539,6 +539,8 @@ h6 {
   #hero {
     height: 120vh;
   }
+
+ 
 }
 
 /*--------------------------------------------------------------
@@ -2824,6 +2826,7 @@ hr.solid {
 
 
 
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .our-team .container .card {
@@ -2885,8 +2888,14 @@ line-height: 1.7;
      font-size: 1.4rem;
      line-height: 1.7;
    }
-}
-
+   .team-member-img {
+     height: 250px;
+     width:17rem ;
+   }
+   #hero .carousel-container {
+     bottom: 100px;
+   }
+  }
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .our-team .container .card {

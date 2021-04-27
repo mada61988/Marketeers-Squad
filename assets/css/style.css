@@ -31,7 +31,12 @@ h5,
 h6 {
   font-family: "Roboto", sans-serif;
 }
-
+.logo-blue{
+  color:#131534;
+}
+.logo-red{
+  color: #b6202e;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -2512,45 +2517,33 @@ color: white;
         color: white;
 }
 #course-section { 
-   position: relative;
-   background: url("../img/Home-Pic.jpeg");
-   min-height: 600px;
-   background-size: cover;
-     background-position: center center;
-       background-attachment: fixed;
-
- margin:auto;
- padding:0;
+ 
+   background-color:#3e090a;
+   
   
 
    }
 
 #course-head{
- background: rgba(0, 0, 0, 0.75);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+
 }
-#home-heading {
-  position: relative;
+#course-enrollment {
+
   min-height: 230px;
-  background: url('../img/lights.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  text-align: center;
-  color: #fff;
+  background-color: #3e090a;
+
+}
+#course-enrollment h1 { 
+color: white;
+text-align: center;
+}
+#course-enrollment button{
+  background-color: #26458b;
+  color: white;
+  font-weight: bold;
+ 
 }
 
-.dark-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-}
 .enroll-btn{
   background-color: #b6202e;
   color: white;
@@ -2894,6 +2887,9 @@ line-height: 1.7;
    }
    #hero .carousel-container {
      bottom: 100px;
+   }
+   #about-video h2{
+     font-size: 1.5rem;
    }
   }
 /* Small devices (landscape phones, less than 768px) */

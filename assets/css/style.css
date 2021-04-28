@@ -31,12 +31,15 @@ h5,
 h6 {
   font-family: "Roboto", sans-serif;
 }
-.logo-blue{
-  color:#131534;
+
+.logo-blue {
+  color: #131534;
 }
-.logo-red{
+
+.logo-red {
   color: #b6202e;
 }
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -145,9 +148,9 @@ h6 {
 .nav-menu li:hover>a {
   color: #b6202e;
   border-bottom: 1px solid #111;
-  
+
 }
- 
+
 
 
 .nav-menu .drop-down ul {
@@ -378,8 +381,8 @@ h6 {
   background-color: rgba(0, 0, 0, 0.8);
   overflow: hidden;
   position: relative;
-  margin-top:85px ;
-  }
+  margin-top: 85px;
+}
 
 #hero .carousel,
 #hero .carousel-inner,
@@ -545,7 +548,7 @@ h6 {
     height: 120vh;
   }
 
- 
+
 }
 
 /*--------------------------------------------------------------
@@ -573,8 +576,9 @@ section {
   padding-bottom: 20px;
   position: relative;
 }
+
 .section-title h3 {
-  
+
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -592,6 +596,7 @@ section {
   bottom: 0;
   left: calc(50% - 25px);
 }
+
 .section-title h3::after {
   content: '';
   position: absolute;
@@ -949,13 +954,15 @@ display: block;
 .about-us .content h2 {
   font-weight: 700;
   font-size: 30px;
-  
+
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-.about-us .content h2 span { 
+
+.about-us .content h2 span {
   font-size: 34px;
 }
+
 .about-us .content h3 {
   font-weight: 500;
   line-height: 32px;
@@ -983,39 +990,46 @@ display: block;
 .about-us .content p:last-child {
   margin-bottom: 0;
 }
-.who-we-are .row p { 
-  line-height:  1.8;
+
+.who-we-are .row p {
+  line-height: 1.8;
   font-size: 21px;
   text-align: center;
   font-weight: 550;
 }
-.who-we-are .row p span { 
+
+.who-we-are .row p span {
   color: #b6202e;
   font-weight: bold;
 }
+
 .why-we-rock .row p {
-font-weight: 550;
-  text-align:center;
+  font-weight: 550;
+  text-align: center;
   line-height: 1.8;
   font-size: 21px;
 }
-.why-we-rock .row p span { 
+
+.why-we-rock .row p span {
   color: #b6202e;
   font-weight: bold;
 
 }
-.our-mission .row p { 
+
+.our-mission .row p {
   font-size: 21px;
   text-align: center;
   line-height: 1.8;
   font-weight: 550;
 }
-.our-vision .row p { 
-    font-size: 21px;
-    text-align: center;
-    line-height: 1.8;
-    font-weight: 550;
+
+.our-vision .row p {
+  font-size: 21px;
+  text-align: center;
+  line-height: 1.8;
+  font-weight: 550;
 }
+
 /*--------------------------------------------------------------
 # Our Team
 --------------------------------------------------------------*/
@@ -1031,11 +1045,13 @@ font-weight: 550;
 .team .member .member-img {
   position: relative;
   overflow: hidden;
- 
+
 }
-.transform img :hover { 
+
+.transform img :hover {
   transform: scale(1.2);
 }
+
 .team .member .social {
   position: absolute;
   left: 0;
@@ -1096,18 +1112,20 @@ font-weight: 550;
 
 .team .logo-design .member-logo a img {
   transition: transform .2s;
-  margin:0 auto;
- 
-}
-.team .logo-design .member-logo a img:hover{
-  transform:scale(1.2)
+  margin: 0 auto;
+
 }
 
-.our-team-description p { 
-  font-weight:500;
-text-align: center;
+.team .logo-design .member-logo a img:hover {
+  transform: scale(1.2)
 }
-.team-member-img{
+
+.our-team-description p {
+  font-weight: 500;
+  text-align: center;
+}
+
+.team-member-img {
   height: 350px;
   width: 17rem;
 }
@@ -1544,23 +1562,28 @@ text-align: center;
   background: #b6202e;
   color: #fff;
 }
+
 .form-button {
   background-color: #b6202e;
- color:white;
+  color: white;
 }
-.contact.form-btn :hover{ 
+
+.contact.form-btn :hover {
   background-color: #880a17;
 }
+
 .contact .php-email-form {
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   padding: 30px;
   background: #fff;
 }
-.contact .card { 
-    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+
+.contact .card {
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 
 }
+
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
 }
@@ -1635,15 +1658,17 @@ text-align: center;
 .contact .php-email-form textarea {
   padding: 10px 12px;
 }
-#email-sent{
+
+#email-sent {
   display: none;
   text-align: center;
   font-size: 20px;
   background-color: #11c001;
   color: white;
   font-weight: bold;
-  
+
 }
+
 .contact .php-email-form button[type="submit"] {
   background: #b6202e;
   border: 0;
@@ -1676,10 +1701,12 @@ text-align: center;
     transform: rotate(360deg);
   }
 }
-.validation-message{ 
-  color:red;
+
+.validation-message {
+  color: red;
   display: none;
-} 
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -2463,91 +2490,99 @@ text-align: center;
 }
 
 #course-header {
- 
+
   padding: 9rem
 }
 
-#course-header  .adham-logo img { 
+#course-header .adham-logo img {
   border-right: 1px solid #662a35;
 
   width: 70px;
   height: 120px;
 }
-#course-header  .adham-logo p{
+
+#course-header .adham-logo p {
   font-size: 1rem;
   display: block;
   padding: 0 0 0 6px;
-  font-family: Poppins,sans-serif;
+  font-family: Poppins, sans-serif;
 
-} 
-
-#course-header h1 { 
-  font-size: 4em;
-    line-height: 1.1em;
-          font-weight: 400;
 }
-#course-header .head-line p { 
+
+#course-header h1 {
+  font-size: 4em;
+  line-height: 1.1em;
+  font-weight: 400;
+}
+
+#course-header .head-line p {
   font-size: 1.5rem;
   font-weight: 600;
 }
- .adham-logo img { 
+
+.adham-logo img {
   border-right: 1px solid white;
 
   width: 70px;
   height: 120px;
 }
-.adham-logo p{
+
+.adham-logo p {
   font-size: 1rem;
   display: block;
   padding: 0 0 0 6px;
-  font-family: Poppins,sans-serif;
-color: white;
+  font-family: Poppins, sans-serif;
+  color: white;
 }
 
-.course-headline p{ 
+.course-headline p {
   font-size: 1.5rem;
   display: block;
   padding: 0 0 0 6px;
- color: white;
+  color: white;
 }
-.course-headline h1 { 
+
+.course-headline h1 {
   font-size: 4em;
   line-height: 1.1em;
-        font-weight: 400;
-        color: white;
+  font-weight: 400;
+  color: white;
 }
-#course-section { 
- 
-   background-color:#3e090a;
-   
-  
 
-   }
+#course-section {
 
-#course-head{
+  background-color: #3e090a;
+
+
 
 }
+
+#course-head {}
+
 #course-enrollment {
 
   min-height: 230px;
   background: linear-gradient(90deg, #41090a 40%, 50%, #710606, 60%, #710606 60%);
 
 }
-#course-enrollment h1 { 
-color: white;
-text-align: center;
+
+#course-enrollment h1 {
+  color: white;
+  text-align: center;
 }
-#course-enrollment button{
+
+#course-enrollment button {
   background-color: #26458b;
   color: white;
   font-weight: bold;
- 
+
 }
 
-.enroll-btn{
+.enroll-btn {
   background-color: #b6202e;
   color: white;
 }
+
 #tabs {
   color: black;
 }
@@ -2654,27 +2689,28 @@ text-align: center;
   color: #131534;
 
 }
-.video-dark-overlay{
- 
-}
+
+.video-dark-overlay {}
 
 #video-modal {
   min-height: 500px;
   text-align: center;
 }
-#video-modal h2 { 
+
+#video-modal h2 {
   font-size: 2rem;
 }
 
-.box-shadow{
+.box-shadow {
   box-shadow: 5px 10px 20px #888888;
 }
+
 .nav-menu.active {
   border-left: #444 3px solid;
 }
 
-#video-modal iframe{ 
-  height:400px;
+#video-modal iframe {
+  height: 400px;
   width: 600px;
 }
 
@@ -2843,55 +2879,74 @@ hr.solid {
   }
 
 
-  .course-headline h1{ 
+  .course-headline h1 {
     font-size: 2.1rem !important;
-   
+
   }
-  .course-headline p{ 
-    font-size: 1.3rem  !important;
+
+  .course-headline p {
+    font-size: 1.3rem !important;
   }
-  #attenders h2{ 
+
+  #attenders h2 {
     font-size: 1.5rem;
   }
-  #video-modal iframe{ 
-    height:300px;
+
+  #video-modal iframe {
+    height: 300px;
     width: 300px;
   }
+
   #video-modal h2 {
     font-size: 1.3rem !important;
   }
-  .who-we-are .row h4{ 
-font-size: 1.3rem;
-line-height: 1.7;
-  }
-  .why-we-rock .row h2 {
-    font-size: 1.4rem;
-  }
-  .why-we-rock .row h2 span { 
-    font-size: 1.4.5rem;
-  }
-  .why-we-rock .row h4 { 
-    font-size: 1.3rem;
-  }
-  .our-mission .row h4 { 
+
+  .who-we-are .row h4 {
     font-size: 1.3rem;
     line-height: 1.7;
   }
-   .our-vision .row h4 {
-     font-size: 1.4rem;
-     line-height: 1.7;
-   }
-   .team-member-img {
-     height: 250px;
-     width:17rem ;
-   }
-   #hero .carousel-container {
-     bottom: 100px;
-   }
-   #about-video h2{
-     font-size: 1.5rem;
-   }
+
+  .who-we-are .row p {
+    font-size: 16px;
+    line-height: 1.8;
   }
+
+  .why-we-rock .row h2 {
+    font-size: 1.4rem;
+  }
+
+  .why-we-rock .row h2 span {
+    font-size: 1.4.5rem;
+  }
+
+  .why-we-rock .row p {
+    font-size: 16px;
+  }
+
+  .our-mission .row h4 {
+    font-size: 1.3rem;
+    line-height: 1.7;
+  }
+
+  .our-vision .row h4 {
+    font-size: 1.4rem;
+    line-height: 1.7;
+  }
+
+  .team-member-img {
+    height: 250px;
+    width: 17rem;
+  }
+
+  #hero .carousel-container {
+    bottom: 100px;
+  }
+
+  #about-video h2 {
+    font-size: 1.5rem;
+  }
+}
+
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .our-team .container .card {
@@ -2906,7 +2961,7 @@ line-height: 1.7;
     margin-top: 30px;
   }
 
- 
+
 
 
 
@@ -2917,10 +2972,11 @@ line-height: 1.7;
   #home-section .dark-overlay {
     min-height: 1100px;
   }
-#video-modal h2{
-  font-size: 10p !important;
-}
-  
+
+  #video-modal h2 {
+    font-size: 10p !important;
+  }
+
 }
 
 /* Medium devices (tablets, less than 992px) */
@@ -2944,12 +3000,15 @@ line-height: 1.7;
   #home-section .dark-overlay {
     min-height: 1100px;
   }
-  .course-headline h1 { 
+
+  .course-headline h1 {
     font-size: 3rem;
   }
-  .course-headline p { 
+
+  .course-headline p {
     font-size: 1.5rem;
   }
+
   #video-modal h2 {
     font-size: 1.8rem;
   }
@@ -2958,10 +3017,10 @@ line-height: 1.7;
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-.team-member-card{ 
-  margin-top: 4rem;
+  .team-member-card {
+    margin-top: 4rem;
 
-}
+  }
 }
 
 /* Extra large devices (large desktops) */

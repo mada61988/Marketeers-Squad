@@ -1010,7 +1010,7 @@ display: block;
   font-size: 21px;
 }
 
-.why-we-rock .row p span {
+.why-we-rock .row p .red-color {
   color: #b6202e;
   font-weight: bold;
 
@@ -2562,7 +2562,7 @@ display: block;
 #course-enrollment {
 
   min-height: 230px;
-  background: linear-gradient(90deg, #41090a 40%, 50%, #710606, 60%, #710606 60%);
+  background: linear-gradient(90deg, #41090a 40%, 50%, #610505, 60%, #610505 60%);
 
 }
 
@@ -2852,8 +2852,190 @@ hr.solid {
   }
 }
 
+a {
+  cursor: pointer;
+}
+
+/* hero section showmore showless */
+#hero-showmore-button {
+  display: none;
+  color: #b6202e
+}
+
+#hero-showless-button {
+  display: none;
+  color: #b6202e;
+
+}
+
+#hero-hidden-text {
+  display: inline;
+}
+
+/* end  hero section showmore showless */
+
+/* whywerock section showmore showless */
+
+#why-we-rock-hidden-text {
+  display: inline;
+
+}
+
+#why-we-rock-showmore-button {
+  display: none;
+  color: #b6202e;
+
+}
+
+#why-we-rock-showless-button {
+  display: none;
+  color: #b6202e;
+
+}
+
+/* end whywerock section showmore showless */
+
+/* our vision section showmore showless */
+
+#our-vision-hidden-text {
+  display: inline;
+
+}
+
+#our-vision-showmore-button {
+  display: none;
+  color: #b6202e;
+
+}
+
+#our-vision-showless-button {
+  display: none;
+  color: #b6202e;
+
+}
+
+/* end our vision section showmore showless */
+
+/* content creation section showmore showless */
+
+#content-creation-hidden-text {
+  display: inline;
+}
+
+#content-creation-showmore-button {
+  display: none;
+  color: #b6202e;
+
+}
+
+#content-creation-showless-button {
+  display: none;
+  color: #b6202e;
+
+}
+
+/* end content creation section showmore showless */
+
+/* web development creation section showmore showless */
+
+#web-development-hidden-text {
+  display: inline;
+}
+
+#web-development-showmore-button {
+  display: none;
+  color: #b6202e;
+
+}
+
+#web-development-showless-button {
+  display: none;
+  color: #b6202e;
+
+}
+
+/* end web development  showmore showless */
+
+/* full marketing strategy showmore showless */
+
+#full-marketing-strategy-hidden-text {
+  display: inline;
+}
+
+#full-marketing-strategy-showmore-button {
+  display: none;
+  color: #b6202e;
+
+}
+
+#full-marketing-strategy-showless-button {
+  display: none;
+  color: #b6202e;
+
+}
+
+/* end full marketing strategy creation section showmore showless */
+
+/* media production showmore showless */
+
+#media-production-hidden-text {
+  display: inline;
+}
+
+#media-production-showmore-button {
+  display: none;
+  color: #b6202e
+}
+
+#media-production-showless-button {
+  display: none;
+  color: #b6202e;
+
+}
+
+/*end  media production showmore showless */
+
+/*designs showmore showless */
 
 
+#designs-hidden-text {
+  display: inline;
+}
+
+#designs-showmore-button {
+  display: none;
+  color: #b6202e;
+
+}
+
+#designs-showless-button {
+  display: none;
+  color: #b6202e;
+
+}
+
+/*end designs showmore showless */
+
+/*styling and photo shoots showmore showless */
+
+#styling-and-photoshoots-hidden-text {
+  display: inline;
+}
+
+#styling-and-photoshoots-showmore-button {
+  display: none;
+  color: #b6202e;
+
+
+}
+
+#styling-and-photoshoots-showless-button {
+  display: none;
+  color: #b6202e;
+
+}
+
+/*end styling and photo shoots showmore showless */
 
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -2923,14 +3105,12 @@ hr.solid {
     font-size: 16px;
   }
 
-  .our-mission .row h4 {
-    font-size: 1.3rem;
-    line-height: 1.7;
+  .our-mission .row p {
+    font-size: 16px;
   }
 
-  .our-vision .row h4 {
-    font-size: 1.4rem;
-    line-height: 1.7;
+  .our-vision .row p {
+    font-size: 16px;
   }
 
   .team-member-img {
@@ -2944,6 +3124,10 @@ hr.solid {
 
   #about-video h2 {
     font-size: 1.5rem;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
   }
 }
 

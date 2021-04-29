@@ -177,7 +177,6 @@
   // rotate team logos 
 
   var p = 0;
-  console.log('window size', window.innerWidth)
   function moveit() {
     p += 0.01;
     var xcenter
@@ -427,3 +426,45 @@ function sendEmail() {
 
 
 }
+
+//readmore readless buttons
+function display (id,action){
+   document.getElementById(id).style.display=action;
+}
+
+arr=['hero','why-we-rock','our-vision','content-creation','web-development','full-marketing-strategy','media-production','designs','styling-and-photoshoots']
+
+function  windowSizeCheck(){
+  if(window.innerWidth<500){
+    for(i=0;i<arr.length;i++){
+    showLessButtonClicked(arr[i]);
+    }
+  }
+  else{
+    for(i=0;i<arr.length;i++){
+    desktopView(arr[i]);
+      }
+  }
+}
+
+function desktopView (sectionID){
+display(`${sectionID}-showmore-button`,'none');
+display(`${sectionID}-showless-button`,'none');
+display(`${sectionID}-hidden-text`,'inline')
+} 
+
+function showMoreButtonClicked (sectionID){
+  display(`${sectionID}-showmore-button`,'none')
+  display(`${sectionID}-hidden-text`,"inline")
+  display(`${sectionID}-showless-button`,"inline")
+}
+
+function showLessButtonClicked (sectionID){
+display(`${sectionID}-hidden-text`,'none')
+display(`${sectionID}-showmore-button`,"inline")
+display(`${sectionID}-showless-button`,"none")
+}
+
+
+window.onload= windowSizeCheck;
+window.onresize= windowSizeCheck;

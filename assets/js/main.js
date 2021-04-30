@@ -428,14 +428,25 @@ function sendEmail() {
 }
 
 //readmore readless buttons
+
 function display (id,action){
    document.getElementById(id).style.display=action;
 }
 
-arr=['hero','why-we-rock','our-vision','content-creation','web-development','full-marketing-strategy','media-production','designs','styling-and-photoshoots']
+arr=[
+  'hero',
+'why-we-rock'
+,'our-vision',
+'content-creation',
+'web-development',
+'full-marketing-strategy',
+'media-production',
+'designs',
+'styling-and-photoshoots'
+]
 
 function  windowSizeCheck(){
-  if(window.innerWidth<500){
+  if(window.innerWidth<1000){
     for(i=0;i<arr.length;i++){
     showLessButtonClicked(arr[i]);
     }

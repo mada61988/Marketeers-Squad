@@ -3038,6 +3038,22 @@ a {
 /*end styling and photo shoots showmore showless */
 
 
+
+.vertical-line {
+  border-left: 3px ridge #131534;
+  height: 80px;
+  z-index: 9;
+}
+
+
+
+
+
+
+
+
+
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .our-team .container .card {
@@ -3129,6 +3145,10 @@ a {
   .section-title h2 {
     font-size: 28px;
   }
+
+  .vertical-line {
+    display: none;
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -3201,9 +3221,19 @@ a {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .team-member-card {
-    margin-top: 4rem;
 
+  .team-member-margin-top {
+    margin-top: 80px;
+  }
+
+  /* .member.adham-card {
+    margin-left: 150px;
+  } */
+}
+
+@media (min-width:1200px) {
+  .team-member-margin-left {
+    margin-left: 150px;
   }
 }
 

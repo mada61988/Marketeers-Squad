@@ -813,7 +813,7 @@ display: block;
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio #portfolio-flters {
+/* .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 50px auto;
   list-style: none;
@@ -836,7 +836,7 @@ display: block;
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #1bbd36;
+  background: #131534;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -857,6 +857,10 @@ display: block;
   transition: all ease-in-out 0.3s;
   background: rgba(255, 255, 255, 0.9);
   padding: 15px;
+}
+
+.portfolio .portfolio-item:hover img {
+  transform: scale(1.2);
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
@@ -915,6 +919,127 @@ display: block;
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   bottom: 20px;
+}
+ */
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 15px 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px;
+}
+
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+  color: #fff;
+  background: #e03a3c;
+}
+
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(17, 17, 17, 0.6);
+}
+
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: rgba(17, 17, 17, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap img {
+  transition: all ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0 5px 0 0;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  color: #fff;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover img {
+  transform: scale(1.2);
+  opacity: 0.9;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
 }
 
 /*--------------------------------------------------------------
@@ -1129,6 +1254,55 @@ display: block;
   height: 350px;
   width: 17rem;
 }
+
+
+
+#work-team h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #111;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+#work-team .member-info span {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  color: #b4aca8;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+#work-team .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #847872;
+  text-align: center;
+}
+
+#work-team .card {
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.test-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid #131534;
+}
+
+.test-btn:hover {
+  background-color: #b6202e;
+  color: white;
+}
+
 
 /*--------------------------------------------------------------
 # Our Skills
@@ -3046,7 +3220,19 @@ a {
 }
 
 
-
+.logo-text {
+  font-family: proxima-nova;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2e2e2e;
+  z-index: 9;
+  position: relative;
+  margin-top: 20px;
+}
 
 
 
@@ -3149,7 +3335,20 @@ a {
   .vertical-line {
     display: none;
   }
+
+  .logo-text {
+    font-size: 13px;
+  }
+
+  #work-team .row h4 {
+    font-size: 14px;
+  }
+
+  #work-team .card .member-info span {
+    font-size: 9px;
+  }
 }
+
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -3233,8 +3432,15 @@ a {
 
 @media (min-width:1200px) {
   .team-member-margin-left {
-    margin-left: 150px;
+    margin-left: 300px;
   }
+
+  .logo-style {
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+
 }
 
 /* Extra large devices (large desktops) */

@@ -476,6 +476,25 @@ display(`${sectionID}-showmore-button`,"inline")
 display(`${sectionID}-showless-button`,"none")
 }
 
+function designs(){
+  document.getElementById('designs').style.display="block"
+  document.getElementById('social-media').style.display="none"
+  document.getElementById('marketing').style.display="none"
 
+}
+function marketing(){
+  document.getElementById('designs').style.display="none"
+  document.getElementById('social-media').style.display="none"
+  document.getElementById('marketing').style.display="block"
+
+}
+function socialMedia(){
+  document.getElementById('designs').style.display="none"
+  document.getElementById('social-media').style.display="block"
+  document.getElementById('marketing').style.display="none"
+
+}
 window.onload= windowSizeCheck;
 window.onresize= windowSizeCheck;
+
+

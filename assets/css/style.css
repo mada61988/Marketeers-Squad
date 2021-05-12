@@ -377,7 +377,7 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 30rem;
   background-color: rgba(0, 0, 0, 0.8);
   overflow: hidden;
   position: relative;
@@ -403,7 +403,7 @@ h6 {
   align-items: flex-end;
   justify-content: center;
   position: absolute;
-  bottom: 200px;
+  bottom: 100px;
   top: 70px;
   left: 55px;
   right: 55px;
@@ -1019,7 +1019,7 @@ display: block;
 
 .portfolio .portfolio-wrap .portfolio-links a {
   color: rgba(255, 255, 255, 0.4);
-  margin: 0 5px 0 0;
+
   font-size: 28px;
   display: inline-block;
   transition: 0.3s;
@@ -1256,11 +1256,14 @@ display: block;
 }
 
 
+#work-team img {
+  height: 19rem;
+}
 
 #work-team h4 {
   font-weight: 700;
   margin-bottom: 5px;
-  font-size: 16px;
+  font-size: 18px;
   color: #111;
   text-align: center;
   font-family: "Raleway", sans-serif;
@@ -1268,7 +1271,7 @@ display: block;
 
 #work-team .member-info span {
   display: block;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 400;
   color: #b4aca8;
   text-align: center;
@@ -2731,8 +2734,6 @@ display: block;
 
 }
 
-#course-head {}
-
 #course-enrollment {
 
   min-height: 230px;
@@ -2749,8 +2750,58 @@ display: block;
   background-color: #26458b;
   color: white;
   font-weight: bold;
-
 }
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #cd486b;
+  color: white;
+}
+
+
+.fa-blog {
+  padding: 20px;
+  font-size: 30px;
+
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 30%;
+}
+
+.fa-blog:hover {
+  opacity: 0.7;
+}
+
+
+/* test */
+
+/* test  */
 
 .enroll-btn {
   background-color: #b6202e;
@@ -3321,7 +3372,7 @@ a {
   }
 
   #hero .carousel-container {
-    bottom: 100px;
+    bottom: 0rem;
   }
 
   #about-video h2 {
@@ -3340,13 +3391,36 @@ a {
     font-size: 13px;
   }
 
-  #work-team .row h4 {
-    font-size: 14px;
+  #work-team .card .member-info h4 {
+    font-size: 16px;
   }
 
   #work-team .card .member-info span {
-    font-size: 9px;
+    font-size: 12px;
   }
+
+  .portfolio .portfolio-wrap .portfolio-info h4 {
+    font-size: 7px;
+  }
+
+  .portfolio .portfolio-wrap .portfolio-info p {
+    font-size: 6px;
+  }
+
+  .portfolio .portfolio-wrap .portfolio-info .row .col-12 a i {
+    font-size: 19px;
+
+  }
+
+  #work-team img {
+    height: 12rem;
+  }
+
+
+  #hero {
+    height: 25rem !important;
+  }
+
 }
 
 
@@ -3416,6 +3490,11 @@ a {
     font-size: 1.8rem;
   }
 
+  #hero {
+    height: 20rem;
+  }
+
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -3423,6 +3502,14 @@ a {
 
   .team-member-margin-top {
     margin-top: 80px;
+  }
+
+  #hero {
+    height: 20rem;
+  }
+
+  #hero .carousel-container {
+    bottom: 2rem;
   }
 
   /* .member.adham-card {

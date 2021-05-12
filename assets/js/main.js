@@ -476,25 +476,84 @@ display(`${sectionID}-showmore-button`,"inline")
 display(`${sectionID}-showless-button`,"none")
 }
 
-function designs(){
-  document.getElementById('designs').style.display="block"
-  document.getElementById('social-media').style.display="none"
-  document.getElementById('marketing').style.display="none"
-
-}
 function marketing(){
-  document.getElementById('designs').style.display="none"
+  document.getElementById('team-content-creation').style.display="none"
+  document.getElementById('design').style.display="none"
+  document.getElementById('motion').style.display="none"
+  document.getElementById('moderation').style.display="none"
+  document.getElementById('account-management').style.display="none"
   document.getElementById('social-media').style.display="none"
   document.getElementById('marketing').style.display="block"
 
-}
-function socialMedia(){
-  document.getElementById('designs').style.display="none"
-  document.getElementById('social-media').style.display="block"
-  document.getElementById('marketing').style.display="none"
 
 }
+function contentCreation (){
+  document.getElementById('marketing').style.display="none"
+  document.getElementById('motion').style.display="none"
+  document.getElementById('moderation').style.display="none"
+  document.getElementById('account-management').style.display="none"
+  document.getElementById('social-media').style.display="none"
+  document.getElementById('design').style.display="none"
+  document.getElementById('team-content-creation').style.display="block"
+
+}
+function design(){
+  document.getElementById('marketing').style.display="none"
+  document.getElementById('team-content-creation').style.display="none"
+  document.getElementById('motion').style.display="none"
+  document.getElementById('moderation').style.display="none"
+  document.getElementById('account-management').style.display="none"
+  document.getElementById('social-media').style.display="none"
+  document.getElementById('design').style.display="block"
+}
+ 
+function motion(){
+  document.getElementById('marketing').style.display="none"
+  document.getElementById('moderation').style.display="none"
+  document.getElementById('account-management').style.display="none"
+  document.getElementById('social-media').style.display="none"
+  document.getElementById('team-content-creation').style.display="none"
+  document.getElementById('design').style.display="none"
+  document.getElementById('motion').style.display="block"
+}
+
+
+
+
+function socialMedia(){
+  document.getElementById('marketing').style.display="none"
+  document.getElementById('moderation').style.display="none"
+  document.getElementById('account-management').style.display="none"
+  document.getElementById('team-content-creation').style.display="none"
+  document.getElementById('design').style.display="none"
+  document.getElementById('motion').style.display="none"
+  document.getElementById('social-media').style.display="block"
+}
+
+
+function moderation (){
+  document.getElementById('marketing').style.display="none"
+  document.getElementById('account-management').style.display="none"
+  document.getElementById('team-content-creation').style.display="none"
+  document.getElementById('design').style.display="none"
+  document.getElementById('motion').style.display="none"
+  document.getElementById('social-media').style.display="none"
+  document.getElementById('moderation').style.display="block"
+}
+
+function accountManagement (){
+  document.getElementById('marketing').style.display="none"
+  document.getElementById('team-content-creation').style.display="none"
+  document.getElementById('design').style.display="none"
+  document.getElementById('motion').style.display="none"
+  document.getElementById('social-media').style.display="none"
+  document.getElementById('moderation').style.display="none"
+  document.getElementById('account-management').style.display="block"
+
+}
+
 window.onload= windowSizeCheck;
 window.onresize= windowSizeCheck;
+
 
 

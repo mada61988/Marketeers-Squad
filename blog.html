@@ -100,7 +100,7 @@
               <img src="./assets/img/adham.png" alt="" class="adham-logo">
 
               <div class=" flex-column align-self-center">
-                <p><strong>Adham-Hossam</strong><br /><span>Instructor </span></br> 
+                <p><strong>Adham-Hossam</strong><br /><span>Marketing Instructor</span></br> 
                 </p>
 
               </div>
@@ -160,7 +160,7 @@
     </section> -->
 
 
-    <section id="about-video" class="about-video " data-aos="zoom-in">
+    <section id="about-video" class="about-video " data-aos="zoom-in" >
       <div class="container">
         <div class="row justify-content-center">
           <div class="card-title section-title">
@@ -181,7 +181,7 @@
       </div>
     </section><!-- End About Video Section -->
     <hr class="solid mx-5" />
-    <section id="attenders" data-aos="fade-left">
+    <section id="attenders" data-aos="zoom-in">
       <div class="row justify-content-center section-title">
         <h2 style="color:#131534"><strong>The yield of effort</strong></h2>
       </div>
@@ -278,18 +278,20 @@
 
       </div>
     </section>
-    <section id="course-enrollment" class="p-5">
+    <section id="course-enrollment" class="p-5" >
       <div class="container-fluid">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="zoom-in">
 
 
           <h1>Are You Ready To Get Started?</h1>
 
 
         </div>
-        <div class="row justify-content-center mt-3">
-          <button class="btn btn-lg enroll-btn" data-toggle="modal" data-target="#enroll-modal">Enroll now</button>
-<!-- Button trigger modal -->
+        <div class="row justify-content-center mt-3" >
+          
+          <button  class="btn btn-lg enroll-btn" data-toggle="modal" data-target="#enroll-modal">Enroll now</button>
+  
+          <!-- Button trigger modal -->
 
 
 <!-- Modal -->
@@ -322,6 +324,9 @@
               <a href="https://www.linkedin.com/in/adham-hossam-398b54172"> <i class="fa fa-blog fa-2x fa-linkedin"></i></a>
              </div>
           </div>
+          <div class="row justify-content-center mt-5">
+            <p>Or <a style="color: blue;" onclick="directToContactPage()">Contact us throw email</a></p>
+          </div>
         </div>
       </div>
       <div class="modal-footer">
@@ -347,8 +352,8 @@
                   aria-controls="nav-home" aria-selected="true">Overview</a> -->
                 <a class="nav-item nav-link active" id="nav-description-tab" data-toggle="tab" href="#nav-description"
                   role="tab" aria-controls="nav-home" aria-selected="true">Description</a>
-                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-                  aria-controls="nav-profile" aria-selected="false">Course Content</a>
+                <a class="nav-item nav-link" id="nav-course-content-tab" data-toggle="tab" href="#nav-course-content" role="tab"
+                  aria-controls="nav-course-content" aria-selected="false">Course Content</a>
                 <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab"
                   aria-controls="nav-about" aria-selected="false">About Instructor</a>
               </div>
@@ -405,7 +410,7 @@
                 </p>
               </div>
 
-              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <div class="tab-pane fade" id="nav-course-content" role="tabpanel" aria-labelledby="nav-course-content-tab">
                 <div class="accordion" id="accordionExample">
                   <div class="jumbotron bg-light">
                     <h6 style="line-height: 1.6;">We bring more to the table than any other course; our expertise spreads out to diverse areas in order to establish a comprehensive knowledge while realizing its full potential through creating an exciting experience for our trainees.  </h6>
@@ -742,27 +747,39 @@
 
     <div class="footer-top">
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
 
           <div class="col-lg-4 col-md-6 footer-contact">
             <!-- <h3>MARKETEERS <br /> <span style="color: #b6202e;">SQUAD</span></h3> -->
             <div class="adham-logo">
-              <div class="d-flex  justify-content-start">
-                <img src="./assets/img/adham.png" alt="" class="adham-logo">
+              <div class="row justify-content-start">
+                <div class="col-3">           
+                       <img src="./assets/img/adham.png" alt="" class="adham-logo" style="border: 0px;">
   
-                <div class=" flex-column align-self-center">
+                <!-- <div class=" flex-column align-self-center">
                   <p><strong>Adham-Hossam</strong><br /><span>Instructor </span></br> 
                   </p>
   
+                </div> -->
+              </div>
+              <div class="col-6 col-md-8">
+                <div class="row mt-5">
+                  <span ><strong>Phone: </strong> +02 1065422101<br></span>
+
+                </div>
+                <div class="row mt-3">
+                  <span ><strong >Email:</strong> mada61988@gmail.com<br></span>
+
                 </div>
               </div>
+            </div>
+
             </div>
             <p class="mt-5 text-start">
 
               Dokki <br /> Nasr City<br>
               Cairo <br><br>
-              <strong>Phone:</strong> +02 1065422101<br>
-              <strong>Email:</strong>mada61988@gmail.com<br>
+              
             </p>
           </div>
 
@@ -778,18 +795,18 @@
             </div> -->
 
           <div class="col-lg-4 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#content-creation" class="footer-services">Content
-                  Creation
+              <li><i class="bx bx-chevron-right"></i> <a id="test-a"  href="#about-video" data-spy="scroll">Peak of achievements</a>
+                <li><i class="bx bx-chevron-right"></i> <a  href="#attenders">Yield of efforts</a>
+
+              <li><i class="bx bx-chevron-right"></i> <a onclick="descriptionButtonClicked()" href="#course-enrollment">Description</a>
+              <li><i class="bx bx-chevron-right"></i> <a href="#course-enrollment" onclick="courseContentButtonClicked()">Course Content
                 </a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#web-development">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#full-marketing-strategy">Full Marketing Strategy</a>
+              <li><i class="bx bx-chevron-right"></i> <a href="#course-enrollment" onclick="aboutInstructorButtonClicked()">About Instructor</a></li>
+              
               </li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#media-production">Media Production</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#designs">Designs</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#styling-and-photoshoots">Styling And Photoshoots</a>
-              </li>
+             
 
             </ul>
           </div>

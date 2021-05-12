@@ -337,9 +337,28 @@
   });
 
 
-
 })(jQuery);
 
+//footer scroll spy
+
+$(document).ready(function () { 
+  
+$("#footer .footer-links a").on('click', function (event) {
+  console.log('entered function')
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 3000, function () {
+
+          window.location.hash = hash;
+        });
+      }
+    });
+})
 function onLoad() {
   if (window.location.pathname == '/Marketeers-Squad/blog.html') {
     document.getElementById('courses').classList.add('active')
@@ -468,12 +487,17 @@ function showMoreButtonClicked (sectionID){
   display(`${sectionID}-showmore-button`,'none')
   display(`${sectionID}-hidden-text`,"inline")
   display(`${sectionID}-showless-button`,"inline")
+if(sectionID == 'hero' && window.innerWidth <=600){document.getElementById('hero').style.height='31rem';}
+console.log(window.innerWidth)
+
 }
 
 function showLessButtonClicked (sectionID){
 display(`${sectionID}-hidden-text`,'none')
 display(`${sectionID}-showmore-button`,"inline")
 display(`${sectionID}-showless-button`,"none")
+if(sectionID == 'hero'&& window.innerWidth <=600){document.getElementById('hero').style.height='20rem';}
+
 }
 
 function marketing(){
@@ -552,8 +576,80 @@ function accountManagement (){
 
 }
 
+
+function descriptionButtonClicked(){
+setTimeout(function (){ document.getElementById('nav-description-tab').style.backgroundColor="#3e090a";
+  document.getElementById('nav-description-tab').style.color="white";
+console.log('first time ')
+setTimeout(function (){ document.getElementById('nav-description-tab').style.backgroundColor="white";
+  document.getElementById('nav-description-tab').style.color="black";
+console.log('socond time');
+setTimeout(()=>{ document.getElementById('nav-description-tab').style.backgroundColor="#3e090a";
+  document.getElementById('nav-description-tab').style.color="white";
+  console.log('third time');
+  setTimeout(()=>{ document.getElementById('nav-description-tab').style.backgroundColor="white";
+document.getElementById('nav-description-tab').style.color="black";
+console.log('fourth time');
+},400);
+},400);
+},400);
+
+
+},3000);
+ 
+}
+function courseContentButtonClicked(){
+
+  setTimeout(function (){ document.getElementById('nav-course-content-tab').style.backgroundColor="#3e090a";
+  document.getElementById('nav-course-content-tab').style.color="white";
+console.log('first time ')
+setTimeout(function (){ document.getElementById('nav-course-content-tab').style.backgroundColor="white";
+  document.getElementById('nav-course-content-tab').style.color="black";
+console.log('socond time');
+setTimeout(()=>{ document.getElementById('nav-course-content-tab').style.backgroundColor="#3e090a";
+  document.getElementById('nav-course-content-tab').style.color="white";
+  console.log('third time');
+  setTimeout(()=>{ document.getElementById('nav-course-content-tab').style.backgroundColor="white";
+document.getElementById('nav-course-content-tab').style.color="black";
+console.log('fourth time');
+},400);
+},400);
+},400);
+
+
+},3000);
+
+}
+
+function aboutInstructorButtonClicked(){
+  setTimeout(function (){ document.getElementById('nav-about-tab').style.backgroundColor="#3e090a";
+  document.getElementById('nav-about-tab').style.color="white";
+console.log('first time ')
+setTimeout(function (){ document.getElementById('nav-about-tab').style.backgroundColor="white";
+  document.getElementById('nav-about-tab').style.color="black";
+console.log('socond time');
+setTimeout(()=>{ document.getElementById('nav-about-tab').style.backgroundColor="#3e090a";
+  document.getElementById('nav-about-tab').style.color="white";
+  console.log('third time');
+  setTimeout(()=>{ document.getElementById('nav-about-tab').style.backgroundColor="white";
+document.getElementById('nav-about-tab').style.color="black";
+console.log('fourth time');
+},400);
+},400);
+},400);
+
+
+},3000);
+}
+
+
+function directToContactPage() { 
+window.location.href = window.location.origin + '/Marketeers-Squad/contact.html'
+console.log(window.location.href = window.location.origin + '/contact.html')
+}
+
+
 window.onload= windowSizeCheck;
 window.onresize= windowSizeCheck;
-
 
 

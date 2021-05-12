@@ -3372,7 +3372,7 @@ a {
   }
 
   #hero .carousel-container {
-    bottom: 0rem;
+    bottom: 3rem;
   }
 
   #about-video h2 {
@@ -3400,11 +3400,11 @@ a {
   }
 
   .portfolio .portfolio-wrap .portfolio-info h4 {
-    font-size: 7px;
+    font-size: 12px;
   }
 
   .portfolio .portfolio-wrap .portfolio-info p {
-    font-size: 6px;
+    font-size: 10px;
   }
 
   .portfolio .portfolio-wrap .portfolio-info .row .col-12 a i {
@@ -3418,7 +3418,7 @@ a {
 
 
   #hero {
-    height: 25rem !important;
+    height: 25rem;
   }
 
 }

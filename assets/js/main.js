@@ -116,12 +116,21 @@
     }, 1500, 'easeInOutExpo');
     return false;
   });
-  $('.footer-services').click(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('#back-to-top-blog-page').fadeIn('slow');
+    } else {
+      $('#back-to-top-blog-page').fadeOut('slow');
+    }
+  });
+
+  $('#back-to-top-blog-page').click(function () {
     $('html, body').animate({
       scrollTop: 0
     }, 1500, 'easeInOutExpo');
     return false;
   });
+
   // Porfolio isotope and filter
   $(window).on('load', function () {
     var portfolioIsotope = $('.portfolio-container').isotope({
@@ -465,6 +474,7 @@ arr=[
 ]
 
 function  windowSizeCheck(){
+  // backToTopButton()
   if(window.innerWidth<1000){
     for(i=0;i<arr.length;i++){
     showLessButtonClicked(arr[i]);
@@ -475,8 +485,13 @@ function  windowSizeCheck(){
     desktopView(arr[i]);
       }
   }
+  
 }
+// function backToTopButton (){
+// if(window.innerWidth<700 && ){
 
+// }
+// };
 function desktopView (sectionID){
 display(`${sectionID}-showmore-button`,'none');
 display(`${sectionID}-showless-button`,'none');
@@ -645,7 +660,7 @@ console.log('fourth time');
 
 function directToContactPage() { 
 window.location.href = window.location.origin + '/Marketeers-Squad/contact.html'
-console.log(window.location.href = window.location.origin + '/contact.html')
+console.log(window.location.href = window.location.origin + '/Marketeers-Squad/contact.html')
 }
 
 

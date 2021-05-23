@@ -353,7 +353,7 @@
 $(document).ready(function () { 
   
 $("#footer .footer-links a").on('click', function (event) {
-  console.log('entered function')
+  console.log('scroll spy entered')
       if (this.hash !== "") {
         event.preventDefault();
 
@@ -474,7 +474,8 @@ arr=[
 ]
 
 function  windowSizeCheck(){
-  // backToTopButton()
+  console.log('window size is ' , window.innerWidth)
+backToTopButton()
   if(window.innerWidth<1000){
     for(i=0;i<arr.length;i++){
     showLessButtonClicked(arr[i]);
@@ -487,11 +488,21 @@ function  windowSizeCheck(){
   }
   
 }
-// function backToTopButton (){
-// if(window.innerWidth<700 && ){
+console.log('path name' , window.location.pathname=='/blog.html')
 
-// }
-// };
+function backToTopButton (){
+if(window.innerWidth<700 && window.location.pathname=='/blog.html'){
+  document.getElementById('course-enrollment').style.display="none"
+document.getElementById('fixed-footer').style.display ="block"
+document.getElementById('back-to-top-blog-page').style.marginBottom='80px'
+}
+else{ 
+  document.getElementById('fixed-footer').style.display ="none"
+document.getElementById('back-to-top-blog-page').style.marginBottom='15px'
+document.getElementById('course-enrollment').style.display="block"
+
+}
+};
 function desktopView (sectionID){
 display(`${sectionID}-showmore-button`,'none');
 display(`${sectionID}-showless-button`,'none');

@@ -54,7 +54,7 @@ h6 {
   background: #b6202e;
   color: #fff;
   transition: display 0.5s ease-in-out;
-  z-index: 99999;
+  z-index: 9;
 }
 
 
@@ -81,11 +81,11 @@ h6 {
   height: 40px;
   border-radius: 3px;
   right: 15px;
-  bottom: 5rem;
+  bottom: 15px;
   background: #b6202e;
   color: #fff;
   transition: display 0.5s ease-in-out;
-  z-index: 99999;
+  z-index: 9;
 }
 
 
@@ -190,7 +190,7 @@ h6 {
   position: absolute;
   left: 15px;
   top: calc(100% + 30px);
-  z-index: 99;
+  z-index: 9;
   opacity: 0;
   visibility: hidden;
   padding: 10px 0;
@@ -2540,6 +2540,7 @@ display: block;
 }
 
 #fixed-footer {
+  display: none;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -2786,6 +2787,16 @@ display: block;
 
 
 
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #course-enrollment {

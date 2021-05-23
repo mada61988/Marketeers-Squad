@@ -474,6 +474,7 @@ arr=[
 ]
 
 function  windowSizeCheck(){
+  console.log('windowsiz function entered')
   console.log('window size is ' , window.innerWidth)
   if(window.innerWidth<1000){
     for(i=0;i<arr.length;i++){
@@ -486,22 +487,9 @@ function  windowSizeCheck(){
       }
   };
 
+  
+}
 
-}
-function backToTopButton(){
-  console.log('back to top function called')
-if(window.innerWidth<700 && window.location.pathname=='/blog.html'){
-  document.getElementById('course-enrollment').style.display="none"
-document.getElementById('fixed-footer').style.display ="block"
-document.getElementById('back-to-top-blog-page').style.marginBottom='80px'
-}
-else{ 
-  document.getElementById('fixed-footer').style.display ="none"
-document.getElementById('back-to-top-blog-page').style.marginBottom='15px'
-document.getElementById('course-enrollment').style.display="block"
-
-}
-};
 function desktopView (sectionID){
 display(`${sectionID}-showmore-button`,'none');
 display(`${sectionID}-showless-button`,'none');
@@ -618,8 +606,6 @@ console.log('fourth time');
 },400);
 },400);
 },400);
-
-
 },3000);
  
 }
@@ -640,16 +626,13 @@ console.log('fourth time');
 },400);
 },400);
 },400);
-
-
 },3000);
-
 }
 
 function aboutInstructorButtonClicked(){
   setTimeout(function (){ document.getElementById('nav-about-tab').style.backgroundColor="#3e090a";
   document.getElementById('nav-about-tab').style.color="white";
-console.log('first time ')
+console.log('first time ');
 setTimeout(function (){ document.getElementById('nav-about-tab').style.backgroundColor="white";
   document.getElementById('nav-about-tab').style.color="black";
 console.log('socond time');
@@ -662,21 +645,12 @@ console.log('fourth time');
 },400);
 },400);
 },400);
-
-
 },3000);
 }
-
-
-function directToContactPage() { 
+function directToContactPage() {
 window.location.href = window.location.origin + '/Marketeers-Squad/contact.html'
 console.log(window.location.href = window.location.origin + '/Marketeers-Squad/contact.html')
 }
 
-
 window.onload= windowSizeCheck;
 window.onresize= windowSizeCheck;
-window.onload= backToTopButton;
-window.onresize= backToTopButton;
-
-

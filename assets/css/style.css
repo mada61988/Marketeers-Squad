@@ -1338,9 +1338,6 @@ display: block;
   color: white;
 }
 
-.carousel {
-  height: 500px;
-}
 
 /*--------------------------------------------------------------
 # Our Skills
@@ -1726,6 +1723,9 @@ display: block;
   padding: 0;
 }
 
+.team-carousel {
+  height: 30rem;
+}
 
 
 /*--------------------------------------------------------------
@@ -2792,15 +2792,6 @@ display: block;
 
 }
 
-.carousel-item {
-
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 #course-enrollment {
 
   min-height: 230px;
@@ -3360,6 +3351,10 @@ a {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .team-carousel {
+    height: 43rem;
+  }
+
   .our-team .container .card {
     height: 900px;
   }
@@ -3488,9 +3483,6 @@ a {
     height: 29rem;
   }
 
-  .carousel {
-    height: 700px;
-  }
 }
 
 /* //speach bubble  */
@@ -3561,6 +3553,8 @@ a {
   .breadcrumbs .container {
     margin-top: 30px;
   }
+
+
 
 
 

@@ -475,7 +475,6 @@ arr=[
 
 function  windowSizeCheck(){
   console.log('window size is ' , window.innerWidth)
-backToTopButton()
   if(window.innerWidth<1000){
     for(i=0;i<arr.length;i++){
     showLessButtonClicked(arr[i]);
@@ -485,11 +484,10 @@ backToTopButton()
     for(i=0;i<arr.length;i++){
     desktopView(arr[i]);
       }
-  }
-  
-}
-console.log('path name' , window.location.pathname=='/blog.html')
+  };
+  backToTopButton();
 
+}
 function backToTopButton (){
 if(window.innerWidth<700 && window.location.pathname=='/blog.html'){
   document.getElementById('course-enrollment').style.display="none"
@@ -513,7 +511,7 @@ function showMoreButtonClicked (sectionID){
   display(`${sectionID}-showmore-button`,'none')
   display(`${sectionID}-hidden-text`,"inline")
   display(`${sectionID}-showless-button`,"inline")
-if(sectionID == 'hero' && window.innerWidth <=600){document.getElementById('hero').style.height='31rem';}
+if(sectionID == 'hero' && window.innerWidth <=600){document.getElementById('hero').style.height='33rem';}
 console.log(window.innerWidth)
 
 }

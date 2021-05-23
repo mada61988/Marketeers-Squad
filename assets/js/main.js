@@ -478,17 +478,18 @@ function  windowSizeCheck(){
   if(window.innerWidth<1000){
     for(i=0;i<arr.length;i++){
     showLessButtonClicked(arr[i]);
-    }
   }
+}
   else{
     for(i=0;i<arr.length;i++){
     desktopView(arr[i]);
       }
   };
-  backToTopButton();
+
 
 }
-function backToTopButton (){
+function backToTopButton(){
+  console.log('back to top function called')
 if(window.innerWidth<700 && window.location.pathname=='/blog.html'){
   document.getElementById('course-enrollment').style.display="none"
 document.getElementById('fixed-footer').style.display ="block"
@@ -675,5 +676,7 @@ console.log(window.location.href = window.location.origin + '/Marketeers-Squad/c
 
 window.onload= windowSizeCheck;
 window.onresize= windowSizeCheck;
+window.onload= backToTopButton;
+window.onresize= backToTopButton;
 
 

@@ -693,7 +693,7 @@ h6 {
 # Team Card
 --------------------------------------------------------------*/
 #team .container .card {
-  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.08);
 
 }
 
@@ -752,7 +752,7 @@ h6 {
   }
 
   #team .container .card .card-body .img-row button {
-    top: 17rem;
+    top: 16.5rem;
   }
 }
 

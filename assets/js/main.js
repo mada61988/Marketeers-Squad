@@ -464,7 +464,8 @@ function display (id,action){
 arr=[
   'hero'
 // 'why-we-rock'
-,'our-vision',
+// ,'our-vision'
+,
 'content-creation',
 'web-development',
 'full-marketing-strategy',

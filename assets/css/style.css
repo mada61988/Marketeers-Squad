@@ -775,8 +775,12 @@ h6 {
   #team .container .card .card-body .img-row button {
     top: 25rem;
   }
-}
 
+  .sidebar-box {
+    max-height: 6rem;
+  }
+
+}
 
 /*--------------------------------------------------------------
 # Team Card

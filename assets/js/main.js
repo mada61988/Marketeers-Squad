@@ -462,8 +462,8 @@ function display (id,action){
 }
 
 arr=[
-  'hero',
-'why-we-rock'
+  'hero'
+// 'why-we-rock'
 ,'our-vision',
 'content-creation',
 'web-development',
@@ -478,6 +478,7 @@ function  windowSizeCheck(){
   console.log('window size is ' , window.innerWidth)
   if(window.innerWidth<1000){
     for(i=0;i<arr.length;i++){
+      console.log(arr[i])
     showLessButtonClicked(arr[i]);
   }
 }
@@ -656,3 +657,293 @@ console.log(window.location.href = window.location.origin + '/Marketeers-Squad/c
 
 window.onload= windowSizeCheck;
 window.onresize= windowSizeCheck;
+
+
+
+//===============================================================================
+// why we rock readmore action 
+//=================================================================================
+
+$(".sidebar-box-why-we-rock .button").click(function() {
+      
+  totalHeight = 0;
+
+  $el = $(this);
+  $p  = $el.parent();
+  $up = $p.parent();
+  $ps = $up.find("p:not('.read-more-why-we-rock')");
+  
+  // measure how tall inside should be by adding together heights of all inside paragraphs (except read-more paragraph)
+  $ps.each(function() {
+    totalHeight += $(this).outerHeight();
+  });
+        
+  $up
+    .css({
+      // Set height to prevent instant jumpdown when max height is removed
+      "height": $up.height(),
+      "max-height": 9999
+    })
+    .animate({
+      "height": totalHeight
+    });
+  
+  // fade out read-more
+  $p.fadeOut();
+  
+  // prevent jump-down
+  return false;
+    
+}); 
+
+//===============================================================================
+// why we rock readmore action 
+//=================================================================================
+
+
+//===============================================================================
+// content-creation readmore action 
+//=================================================================================
+
+// $(".sidebar-box-content-creation .button").click(function() {
+      
+//   totalHeight = 0
+
+//   $el = $(this);
+//   $p  = $el.parent();
+//   $up = $p.parent();
+//   $ps = $up.find("p:not('.read-more-content-creation')");
+  
+//   // measure how tall inside should be by adding together heights of all inside paragraphs (except read-more paragraph)
+//   $ps.each(function() {
+//     totalHeight += $(this).outerHeight();
+//   });
+        
+//   $up
+//     .css({
+//       // Set height to prevent instant jumpdown when max height is removed
+//       "height": $up.height(),
+//       "max-height": 9999
+//     })
+//     .animate({
+//       "height": totalHeight
+//     });
+  
+//   // fade out read-more
+//   $p.fadeOut();
+  
+//   // prevent jump-down
+//   return false;
+    
+// }); 
+
+//===============================================================================
+// content creation readmore action 
+//=================================================================================
+
+
+
+//===============================================================================
+// WEB DEVELOPMENT readmore action 
+//=================================================================================
+
+// $(".sidebar-box-web-development .button").click(function() {
+      
+//   totalHeight = 0
+
+//   $el = $(this);
+//   $p  = $el.parent();
+//   $up = $p.parent();
+//   $ps = $up.find("p:not('.read-more-web-development')");
+  
+//   // measure how tall inside should be by adding together heights of all inside paragraphs (except read-more paragraph)
+//   $ps.each(function() {
+//     totalHeight += $(this).outerHeight();
+//   });
+        
+//   $up
+//     .css({
+//       // Set height to prevent instant jumpdown when max height is removed
+//       "height": $up.height(),
+//       "max-height": 9999
+//     })
+//     .animate({
+//       "height": totalHeight
+//     });
+  
+//   // fade out read-more
+//   $p.fadeOut();
+  
+//   // prevent jump-down
+//   return false;
+    
+// }); 
+
+//===============================================================================
+// WEB DEVELOPMENT readmore action 
+//=================================================================================
+
+
+
+//===============================================================================
+// FULL MARKETING STRATEGY readmore action 
+//=================================================================================
+
+// $(".sidebar-box-full-marketing-strategy .button").click(function() {
+      
+//   totalHeight = 0
+
+//   $el = $(this);
+//   $p  = $el.parent();
+//   $up = $p.parent();
+//   $ps = $up.find("p:not('.read-more-full-marketing-strategy')");
+  
+//   // measure how tall inside should be by adding together heights of all inside paragraphs (except read-more paragraph)
+//   $ps.each(function() {
+//     totalHeight += $(this).outerHeight();
+//   });
+        
+//   $up
+//     .css({
+//       // Set height to prevent instant jumpdown when max height is removed
+//       "height": $up.height(),
+//       "max-height": 9999
+//     })
+//     .animate({
+//       "height": totalHeight
+//     });
+  
+//   // fade out read-more
+//   $p.fadeOut();
+  
+//   // prevent jump-down
+//   return false;
+    
+// }); 
+
+//===============================================================================
+// FULL MARKETING STRATEGY readmore action 
+//=================================================================================
+
+
+//===============================================================================
+// MEDIA PRODUCTION STRATEGY readmore action 
+//=================================================================================
+
+// $(".sidebar-box-media-production .button").click(function() {
+      
+//   totalHeight = 0
+
+//   $el = $(this);
+//   $p  = $el.parent();
+//   $up = $p.parent();
+//   $ps = $up.find("p:not('.read-more-media-production')");
+  
+//   // measure how tall inside should be by adding together heights of all inside paragraphs (except read-more paragraph)
+//   $ps.each(function() {
+//     totalHeight += $(this).outerHeight();
+//   });
+        
+//   $up
+//     .css({
+//       // Set height to prevent instant jumpdown when max height is removed
+//       "height": $up.height(),
+//       "max-height": 9999
+//     })
+//     .animate({
+//       "height": totalHeight
+//     });
+  
+//   // fade out read-more
+//   $p.fadeOut();
+  
+//   // prevent jump-down
+//   return false;
+    
+// }); 
+
+//===============================================================================
+// MEDIA PRODUCTION STRATEGY readmore action 
+//=================================================================================
+
+
+//===============================================================================
+// DESIGNS readmore action 
+//=================================================================================
+
+// $(".sidebar-box-designs .button").click(function() {
+      
+//   totalHeight = 0
+
+//   $el = $(this);
+//   $p  = $el.parent();
+//   $up = $p.parent();
+//   $ps = $up.find("p:not('.read-more-designs')");
+  
+//   // measure how tall inside should be by adding together heights of all inside paragraphs (except read-more paragraph)
+//   $ps.each(function() {
+//     totalHeight += $(this).outerHeight();
+//   });
+        
+//   $up
+//     .css({
+//       // Set height to prevent instant jumpdown when max height is removed
+//       "height": $up.height(),
+//       "max-height": 9999
+//     })
+//     .animate({
+//       "height": totalHeight
+//     });
+  
+//   // fade out read-more
+//   $p.fadeOut();
+  
+//   // prevent jump-down
+//   return false;
+    
+// }); 
+
+//===============================================================================
+// DESIGNS STRATEGY readmore action 
+//=================================================================================
+
+
+//===============================================================================
+// STYLING AND PHOTOSHOOTS readmore action 
+//=================================================================================
+
+// $(".sidebar-box-styling-and-photoshoots .button").click(function() {
+      
+//   totalHeight = 0
+
+//   $el = $(this);
+//   $p  = $el.parent();
+//   $up = $p.parent();
+//   $ps = $up.find("p:not('.read-more-styling-and-photoshoots')");
+  
+//   // measure how tall inside should be by adding together heights of all inside paragraphs (except read-more paragraph)
+//   $ps.each(function() {
+//     totalHeight += $(this).outerHeight();
+//   });
+        
+//   $up
+//     .css({
+//       // Set height to prevent instant jumpdown when max height is removed
+//       "height": $up.height(),
+//       "max-height": 9999
+//     })
+//     .animate({
+//       "height": totalHeight
+//     });
+  
+//   // fade out read-more
+//   $p.fadeOut();
+  
+//   // prevent jump-down
+//   return false;
+    
+// }); 
+
+//===============================================================================
+// FULL MARKETING STRATEGY readmore action 
+//=================================================================================

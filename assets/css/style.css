@@ -690,6 +690,81 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Team Card
+--------------------------------------------------------------*/
+#team .container .card .card-body .team-img {
+  width: 90px;
+  border-radius: 50px;
+  border: 6px solid #fff;
+  float: left;
+  margin: 0 10px 0 0;
+
+}
+
+#team .container .card .card-body h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #111;
+}
+
+#team .container .card .card-body h4 {
+  font-size: 14px;
+  color: #999;
+  display: block;
+}
+
+#team .container .card .card-body .img-row {
+  height: 20rem;
+}
+
+#team .container .card .card-body .img-row button {
+  top: 25rem;
+  position: absolute;
+  font-weight: bold;
+}
+
+#team .container .card .card-body .img-row button:hover {
+  background-color: white;
+  color: #b6202e;
+  border: 3px solid #b6202e;
+  font-weight: bold;
+}
+
+.img-blur {
+  filter: blur(2px);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+
+
+@media (max-width: 575.98px) {
+  #team .container .card .card-body .img-row {
+    height: 12rem;
+  }
+
+  #team .container .card .card-body .img-row button {
+    top: 17rem;
+
+  }
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Team Card
+--------------------------------------------------------------*/
+
+
+
+
+
+/*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {

@@ -13,5 +13,17 @@ function fixedFooter(){
   
   }
   };
+
+
+
+
+
+
+
+
+
+
+
+
   window.onload= fixedFooter;
   window.onresize= fixedFooter;

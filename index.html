@@ -41,6 +41,13 @@
 </head>
 
 <body onload="onLoad()">
+<!-- <div id="load">
+ <div class="container">
+  <div class="lds-ellipsis"><div>
+ </div>
+</div> -->
+<div >
+
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
@@ -87,11 +94,13 @@
   <section id="hero">
     <div id="heroCarousel" class="carousel slide carousel-fade " data-ride="carousel">
 
-      <div class="carousel-inner " role="listbox">
+      <div class="carousel-inner " role="listbox" >
 
         <!-- Slide 1 -->
-        <div class="carousel-item active " style="background-color: #3e090a;">
-          <div class="carousel-container">
+        <div class="carousel-item active " style=" background-image: url('./assets/img/Hero-Test.jpg');
+        
+ ">
+          <div class="carousel-container" style="background: rgba(0,0,0, 0.8);" >
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>MARKETEERS <span>SQUAD</span></h2>
               <p>Marketeers squad go beyond the scope of what might be their obligation, we are suchlike a double-edged
@@ -159,22 +168,38 @@
   </div>
 
 
-      <div class="">
-          <div class="row" data-aos="fade-up" data-aos-delay="100">
-              <div class="col-lg-12 d-flex justify-content-center">
+    
+          <div data-aos="fade-up" data-aos-delay="1000">
                 <ul id="portfolio-flters">
-                  <li class="filter-active"  onclick="marketing()">Marketing</li>
-                  <li onclick="contentCreation()">Content Creation</li>
-                  <li onclick="design()">Design</li>
-                  <li onclick="motion()">Motion</li>
-                  <li onclick="socialMedia()">Social Media</li>
-                  <li onclick="moderation()">Moderation</li>
-                  <li onclick="accountManagement()">Account Management</li>
-      
+                  <div class="row justify-content-center">
+
+                 <div class="col-5 col-md-1">
+                  <li class="filter-active"  onclick="marketing()"><button class="btn btn-sm text-uppercase">Marketing</button></li>
+
+                 </div>
                 
+                 <div class=" col-5 col-md-1"><li onclick="design()"><button class="btn btn-sm text-uppercase">Design</button></li></div>
+                 <div class=" col-5 col-md-1">  <li onclick="motion()"> <button class="btn btn-sm text-uppercase">Motion</button></li></div>
+                 <div class=" col-5 col-md-1"><li onclick="moderation()"><button class="btn btn-sm text-uppercase">Moderation</button></li></div>
+
+                 <div class=" col-5 col-md-1"><li onclick="socialMedia()"><button class="btn btn-sm text-uppercase">Social Media</button></li></div>
+
+                 <div class="col-5 col-md-1">
+                  <li onclick="contentCreation()"><button class="btn btn-sm text-uppercase">Content Creation</button></li>
+
+                 </div>
+                 <div class=" col-5 col-md-1 ml-md-5"><li onclick="accountManagement()"><button class="btn btn-sm text-uppercase">Account Management</button></li></div>
+
+                  <!-- 
+                
+                  
+                  
+                  
+       -->
+                </div>
                 </ul>
               </div>
-            </div>
+           
       </div>
       <!-- start markting section   -->
       <div class=" w-100" style="width: 100%;"  id="marketing">
@@ -1285,7 +1310,7 @@
       <!-- start design  -->
       <div id="design" class="container" style="display:none">
       </div>
-      </div>
+      <!-- </div> -->
      
       <!-- end design  -->
       
@@ -2192,7 +2217,20 @@
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
   <!-- Vendor JS Files -->
-
+<!-- <script>
+document.onreadystatechange = function () {
+    var state = document.readyState
+    if (state == 'interactive') {
+         document.getElementById('contents').style.display="none";
+    } else if (state == 'complete') {
+        setTimeout(function(){
+           document.getElementById('interactive');
+           document.getElementById('load').style.display="none";
+           document.getElementById('contents').style.display="block";
+        },4000);
+    };
+}
+</script> -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -2207,8 +2245,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/knockout.js"></script>
-
+</div>
 </body>
 
 </html>

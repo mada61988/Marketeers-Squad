@@ -8,6 +8,98 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+#load .container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #dfc;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+
+@keyframes logo-animation-page-loads {
+  from {
+    width: 2px;
+  }
+
+  to {
+    width: 200px;
+  }
+}
+
+#load .container img {
+  width: 2px;
+  animation-name: logo-animation-page-loads;
+  animation-duration: 3s;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #4d4643;
@@ -407,10 +499,19 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+#loading .container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  background-color: red;
+}
+
 #hero {
   width: 100%;
-  height: 30rem;
-  background-color: rgba(0, 0, 0, 0.8);
+  height: 35rem !important;
+  background: rgba(0, 0, 0, 0.8);
   overflow: hidden;
   position: relative;
   margin-top: 85px;
@@ -432,13 +533,18 @@ h6 {
 
 #hero .carousel-container {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 100px;
+  /* bottom: 100px;
   top: 70px;
   left: 55px;
-  right: 55px;
+  right: 55px; */
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+
 }
 
 #hero .carousel-content {
@@ -958,8 +1064,6 @@ display: block;
 }
 
 .portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
 }
@@ -967,10 +1071,8 @@ display: block;
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
-  padding: 8px 15px 10px 15px;
   font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
+  font-weight: 500;
   text-transform: uppercase;
   color: #444444;
   margin-bottom: 5px;
@@ -978,9 +1080,17 @@ display: block;
   border-radius: 3px;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
-  color: #fff;
+.portfolio #portfolio-flters li button {
+  font-size: 13px;
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.portfolio #portfolio-flters li button:hover,
+.portfolio #portfolio-flters li.filter-active button {
+  color: white;
   background: #e03a3c;
 }
 
@@ -1328,15 +1438,20 @@ display: block;
 
 
 .test-btn {
-  background-color: white;
-  color: black;
+  background-color: #b6202e;
+  color: white;
   border: 1px solid #131534;
+
 }
 
 .test-btn:hover {
-  background-color: #b6202e;
-  color: white;
+  background-color: white;
+  color: black;
+  border: 2px solid #131534;
+  animation-name: button-text-expands;
+  animation-duration: 1s;
 }
+
 
 
 /*--------------------------------------------------------------
@@ -1695,7 +1810,7 @@ display: block;
 .testimonials .testimonial-item h4 {
   font-size: 14px;
   color: #999;
-  margin: 0;
+  display: block;
 }
 
 .testimonials .testimonial-item .quote-icon-left,

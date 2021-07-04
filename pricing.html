@@ -103,21 +103,26 @@
 
     <!-- Prices description -->
 
-    <section id="prices-description">
-      <div class="container">
-        <div class="card">
-          <i class="fa fa-comment ml-auto mr-3 fa-2x"></i>
+    <section id="prices-description" data-aos="zoom-in">
+      <div class="container ">
+        <div class="row justify-content-center">
+        <div class="col-12 col-md-8" >
+
+       
+        <div class="card bg-light">
+          <!-- <i class="fa fa-comment ml-auto mr-3 fa-2x"></i> -->
           <div class="card-body">
-            <h3>We seek to empower brands with the power to yield their highest potential, compel to think & act and
-              more than anything
-              touch consumers in a way which alleviates their lives therefore we provide a various range of categories
-              to match with
-              all the needs, range of categories:</h3>
+            <p class="price-description">We seek to empower brands with the power to yield their highest potential, compel to think & act and
+               more than anything
+               touch consumers in a way which alleviates their lives therefore we provide a various range of categories
+               to match with
+               all the needs, range of categories</p>
           </div>
         </div>
+      </div>  
+    </div>
       </div>
     </section>
-
     <!-- end prices description -->
 
 
@@ -381,7 +386,23 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+  
+    var textToDisplay = "We seek to empower brands with the power to yield their highest potential, compel to think & act and more than anything touch consumers in a way which alleviates their lives therefore we provide a various range of categories to match with all the needs, range of categories :"
+    
+      $output = $(".price-description");
+    
 
+      var displayInt;
+      textToDisplay = textToDisplay.split(' ');
+      $output.empty();
+      displayInt = setInterval(function() {
+        var word = textToDisplay.shift();
+        if (word == null) { return clearInterval(displayInt); }
+        $output.append(word + ' ');
+      }, 250);
+
+    </script>
 </body>
 
 </html>

@@ -408,6 +408,7 @@ h6 {
   padding: 10px 20px;
   font-weight: 500;
   outline: none;
+
 }
 
 .mobile-nav a:hover,
@@ -692,13 +693,13 @@ h6 {
 /*--------------------------------------------------------------
 # Team Card
 --------------------------------------------------------------*/
-#team .container .card {
+.team-members .container .card {
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.08);
 
 }
 
-#team .container .card .card-body .team-img {
-  width: 90px;
+.team-members .container .card .card-body .team-img {
+  width: 110px;
   border-radius: 50px;
   border: 6px solid #fff;
   float: left;
@@ -706,35 +707,39 @@ h6 {
 
 }
 
-#team .container .card .card-body h3 {
+.team-members .container .card .card-body h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
   color: #111;
 }
 
-#team .container .card .card-body h4 {
+.team-members .container .card .card-body h4 {
   font-size: 14px;
   color: #999;
   display: block;
 }
 
-#team .container .card .card-body .img-row {
+.team-members .container .card .card-body .img-row {
   height: 20rem;
 }
 
-#team .container .card .card-body .img-row button {
+.team-members .container .card .card-body .img-row button {
   top: 25rem;
   position: absolute;
   font-weight: bold;
 }
 
-#team .container .card .card-body .img-row button:hover {
+.team-members .container .card .card-body .img-row button:hover {
   background-color: white;
   color: #b6202e;
   border: 3px solid #b6202e;
   font-weight: bold;
 }
+
+
+
+
 
 .img-blur {
   filter: blur(2px);
@@ -744,11 +749,31 @@ h6 {
   overflow: hidden;
 }
 
+
+
+.dialog-activator-btn {
+  background-color: #b6202e;
+  color: white;
+  border: 1px solid #131534;
+
+}
+
+.dialog-activator-btn:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #131534;
+  animation-name: button-text-expands;
+  animation-duration: 1s;
+}
+
+
 .sidebar-box {
   max-height: 12rem;
   position: relative;
   overflow: hidden;
 }
+
+
 
 .sidebar-box .read-more {
   position: absolute;
@@ -768,18 +793,21 @@ h6 {
 }
 
 @media (max-width: 480px) {
-  #team .container .card .card-body .img-row {
+  .team-members .container .card .card-body .img-row {
     height: 13rem;
   }
 
-  #team .container .card .card-body .img-row button {
-    top: 25rem;
+  .team-members .container .card .card-body .img-row button {
+    top: 17rem;
   }
 
   .sidebar-box {
     max-height: 6rem;
   }
 
+  .team-members .container .card .card-body .team-img {
+    width: 90px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1538,20 +1566,7 @@ display: block;
 }
 
 
-.test-btn {
-  background-color: #b6202e;
-  color: white;
-  border: 1px solid #131534;
 
-}
-
-.test-btn:hover {
-  background-color: white;
-  color: black;
-  border: 2px solid #131534;
-  animation-name: button-text-expands;
-  animation-duration: 1s;
-}
 
 
 
@@ -1686,7 +1701,7 @@ display: block;
 # Pricing
 --------------------------------------------------------------*/
 .pricing .box {
-  padding: 20px;
+
   background: #fff;
   text-align: center;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
@@ -1939,9 +1954,9 @@ display: block;
   padding: 0;
 }
 
-.team-carousel {
+/* .team-carousel {
   height: 30rem;
-}
+} */
 
 
 /*--------------------------------------------------------------
@@ -3567,9 +3582,9 @@ a {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .team-carousel {
+  /* .team-carousel {
     height: 43rem;
-  }
+  } */
 
   .our-team .container .card {
     height: 900px;
@@ -3864,3 +3879,35 @@ a {
 
 /* Extra large devices (large desktops) */
 /* No media query since the extra-large breakpoint has no upper bound on its width */
+
+
+
+
+/* Brush in blog html  */
+
+
+.brush {
+  margin: 3%;
+  position: relative;
+  height: 100px;
+  width: 300px;
+  background-image: url('../img/Brush.png');
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position-y: center;
+}
+
+.brush .brush-img {
+  max-height: 3rem;
+  max-width: 5rem;
+}
+
+.brush .brush-text {
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+  color: white;
+  font-weight: bold;
+}
+
+/* end brush in blog html */

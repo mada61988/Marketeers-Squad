@@ -650,7 +650,7 @@ console.log('fourth time');
 }
 function directToContactPage() {
 window.location.href = window.location.origin + '/Marketeers-Squad/contact.html'
-console.log(window.location.href = window.location.origin + '/Marketeers-Squad/contact.html')
+console.log(window.location.href = window.location.origin )
 };
 
 

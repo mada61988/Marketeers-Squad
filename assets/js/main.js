@@ -1,3 +1,6 @@
+// This Code Belongs to Mohamed Ayman 
+//      Linkidin: https://www.linkedin.com/in/mohamed-ayman-8b6b8b1b7
+
 
 !(function ($) {
   "use strict";
@@ -458,7 +461,7 @@ arr=[
 ]
 
 function  windowSizeCheck(){
-
+if(window.location.href ==  window.location.origin + '/Marketeers-Squad/index.html' ||  window.location.origin + '/Marketeers-Squad/'){
   if(window.innerWidth<1000){
     for(i=0;i<arr.length;i++){
      
@@ -470,7 +473,7 @@ function  windowSizeCheck(){
     desktopView(arr[i]);
       }
   };
-
+}
   
 }
 
@@ -1016,3 +1019,7 @@ $(".sidebar-box-hero-title .button").click(function() {
 //===============================================================================
 // HERO TITLE readmore action 
 //=================================================================================
+
+// This Code Belongs to Mohamed Ayman 
+//      Linkidin: https://www.linkedin.com/in/mohamed-ayman-8b6b8b1b7
+

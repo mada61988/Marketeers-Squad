@@ -461,7 +461,7 @@ arr=[
 ]
 
 function  windowSizeCheck(){
-if(window.location.href ==  'https://mada61988.github.io/Marketeers-Squad/' ||  'https://mada61988.github.io/Marketeers-Squad/index.html'){
+if(window.location.pathname == '/Marketeers-Squad/' || '/Marketeers-Squad/index.html'){
   if(window.innerWidth<1000){
     for(i=0;i<arr.length;i++){
      

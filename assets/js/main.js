@@ -476,7 +476,7 @@ if(window.location.href ==  window.location.origin + '/Marketeers-Squad/index.ht
 }
   
 }
-
+console.log(window.location)
 function desktopView (sectionID){
 display(`${sectionID}-showmore-button`,'none');
 display(`${sectionID}-showless-button`,'none');

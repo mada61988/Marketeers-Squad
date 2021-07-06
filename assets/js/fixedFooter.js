@@ -10,17 +10,5 @@ function fixedFooter(){
   document.getElementById('course-enrollment').style.display="block"
   }
   };
-
-
-
-
-
-
-
-
-
-
-
-
   window.onload= fixedFooter;
   window.onresize= fixedFooter;

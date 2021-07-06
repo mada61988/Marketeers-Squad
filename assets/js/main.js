@@ -348,7 +348,7 @@
 $(document).ready(function () { 
   
 $("#footer .footer-links a").on('click', function (event) {
-  console.log('scroll spy entered')
+
       if (this.hash !== "") {
         event.preventDefault();
 
@@ -399,20 +399,9 @@ function cycleCarousel() {
 }
 
 function test() {
-  // if (doc('mobile-number').match(regex)) {
-  //   console.log(true)
-  //   console.log(doc('mobile-number').match(regex))
-  // }
-
-  // var reg = new RegExp('/^\d+$/');
-  // console.log(reg.test('asdas'));
-
-
   const re = /^\d*(\.\d+)?$/;
-  console.log(doc('mobile-number').match(re))       // true
   '123.3'.match(re)     // true
   '123!3'.match(re)
-  console.log(doc('mobile-number').length)
 }
 const re = /^\d*(\.\d+)?$/;
 
@@ -431,7 +420,7 @@ function sendEmail() {
       Body: "",
     })
       .then(function (message) {
-        console.log(message)
+        
         document.getElementById('email-sent').style.display = 'block'
       });
   }
@@ -469,11 +458,10 @@ arr=[
 ]
 
 function  windowSizeCheck(){
-  console.log('windowsiz function entered')
-  console.log('window size is ' , window.innerWidth)
+
   if(window.innerWidth<1000){
     for(i=0;i<arr.length;i++){
-      console.log(arr[i])
+     
     showLessButtonClicked(arr[i]);
   }
 }
@@ -497,7 +485,7 @@ function showMoreButtonClicked (sectionID){
   display(`${sectionID}-hidden-text`,"inline")
   display(`${sectionID}-showless-button`,"inline")
 if(sectionID == 'hero' && window.innerWidth <=600){document.getElementById('hero').style.height='33rem';}
-console.log(window.innerWidth)
+
 
 }
 
@@ -589,16 +577,16 @@ function accountManagement (){
 function descriptionButtonClicked(){
 setTimeout(function (){ document.getElementById('nav-description-tab').style.backgroundColor="#3e090a";
   document.getElementById('nav-description-tab').style.color="white";
-console.log('first time ')
+
 setTimeout(function (){ document.getElementById('nav-description-tab').style.backgroundColor="white";
   document.getElementById('nav-description-tab').style.color="black";
-console.log('socond time');
+
 setTimeout(()=>{ document.getElementById('nav-description-tab').style.backgroundColor="#3e090a";
   document.getElementById('nav-description-tab').style.color="white";
-  console.log('third time');
+  
   setTimeout(()=>{ document.getElementById('nav-description-tab').style.backgroundColor="white";
 document.getElementById('nav-description-tab').style.color="black";
-console.log('fourth time');
+
 },400);
 },400);
 },400);
@@ -609,16 +597,16 @@ function courseContentButtonClicked(){
 
   setTimeout(function (){ document.getElementById('nav-course-content-tab').style.backgroundColor="#3e090a";
   document.getElementById('nav-course-content-tab').style.color="white";
-console.log('first time ')
+
 setTimeout(function (){ document.getElementById('nav-course-content-tab').style.backgroundColor="white";
   document.getElementById('nav-course-content-tab').style.color="black";
-console.log('socond time');
+
 setTimeout(()=>{ document.getElementById('nav-course-content-tab').style.backgroundColor="#3e090a";
   document.getElementById('nav-course-content-tab').style.color="white";
-  console.log('third time');
+
   setTimeout(()=>{ document.getElementById('nav-course-content-tab').style.backgroundColor="white";
 document.getElementById('nav-course-content-tab').style.color="black";
-console.log('fourth time');
+
 },400);
 },400);
 },400);
@@ -628,27 +616,26 @@ console.log('fourth time');
 function aboutInstructorButtonClicked(){
   setTimeout(function (){ document.getElementById('nav-about-tab').style.backgroundColor="#3e090a";
   document.getElementById('nav-about-tab').style.color="white";
-console.log('first time ');
+
 setTimeout(function (){ document.getElementById('nav-about-tab').style.backgroundColor="white";
   document.getElementById('nav-about-tab').style.color="black";
-console.log('socond time');
+
 setTimeout(()=>{ document.getElementById('nav-about-tab').style.backgroundColor="#3e090a";
   document.getElementById('nav-about-tab').style.color="white";
-  console.log('third time');
+
   setTimeout(()=>{ document.getElementById('nav-about-tab').style.backgroundColor="white";
 document.getElementById('nav-about-tab').style.color="black";
-console.log('fourth time');
+
 },400);
 },400);
 },400);
 },3000);
 }
 function directToContactPage() {
-window.location.href = window.location.origin + '/Marketeers-Squad/contact.html'
-console.log(window.location.href = window.location.origin )
+window.location.href = window.location.origin+'/Marketeers-Squad/contact.html'
+
 };
-
-
+console.log('redirect url',window.location.origin+'/Marketeers-Squad/contact.html')
 
 window.onload= windowSizeCheck;
 window.onresize= windowSizeCheck;

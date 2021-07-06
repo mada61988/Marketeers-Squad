@@ -461,7 +461,7 @@ arr=[
 ]
 
 function  windowSizeCheck(){
-if(window.location.pathname == '/Marketeers-Squad/' || '/Marketeers-Squad/index.html'){
+if(window.location.pathname == "/Marketeers-Squad/" || window.location.pathname == "/Marketeers-Squad/index.html" ){
   if(window.innerWidth<1000){
     for(i=0;i<arr.length;i++){
      

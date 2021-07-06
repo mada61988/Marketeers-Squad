@@ -635,7 +635,10 @@ function directToContactPage() {
 window.location.href = window.location.origin+'/Marketeers-Squad/contact.html'
 
 };
-console.log('redirect url',window.location.origin+'/Marketeers-Squad/contact.html')
+
+function redirectToHomePage(){ 
+  window.loacation.href= window.location.origin + '/Marketeers-Squad/'
+}
 
 window.onload= windowSizeCheck;
 window.onresize= windowSizeCheck;
@@ -971,4 +974,45 @@ $(".sidebar-box-styling-and-photoshoots .button").click(function() {
 
 //===============================================================================
 // STYLING AND PHOTOSHOOTS readmore action 
+//=================================================================================
+
+
+//===============================================================================
+// HERO TITLE readmore action 
+//=================================================================================
+
+$(".sidebar-box-hero-title .button").click(function() {
+      
+  totalHeight = 0
+
+  $el = $(this);
+  $p  = $el.parent();
+  $up = $p.parent();
+  $ps = $up.find("p:not('.read-more-hero-title')");
+  
+  // measure how tall inside should be by adding together heights of all inside paragraphs (except read-more paragraph)
+  $ps.each(function() {
+    totalHeight += $(this).outerHeight();
+  });
+        
+  $up
+    .css({
+      // Set height to prevent instant jumpdown when max height is removed
+      "height": $up.height(),
+      "max-height": 9999
+    })
+    .animate({
+      "height": totalHeight
+    });
+  
+  // fade out read-more
+  $p.fadeOut();
+  
+  // prevent jump-down
+  return false;
+    
+}); 
+
+//===============================================================================
+// HERO TITLE readmore action 
 //=================================================================================
